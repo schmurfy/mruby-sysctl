@@ -10,6 +10,7 @@
 #include <sys/socket.h>
 #include <ifaddrs.h>
 #include <arpa/inet.h>
+#include <netinet/in.h>
 
 #include <net/route.h>
 #include <net/if.h>
