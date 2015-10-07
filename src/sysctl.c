@@ -238,7 +238,7 @@ void mrb_mruby_sysctl_gem_init(mrb_state *mrb)
 {
   // struct RClass *mod = mrb_define_module(mrb, "SysCtl");
   // struct RClass *class = mrb_define_class_under(mrb, mod, "NetworkInterfaces", NULL);
-  struct RClass *class = mrb_define_class(mrb, "NetworkInterfaces", NULL);
+  struct RClass *class = mrb_define_class(mrb, "NetworkInterfaces", mrb->object_class);
   
   int ai = mrb_gc_arena_save(mrb);
   
